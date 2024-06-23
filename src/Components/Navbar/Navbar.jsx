@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './Navbar.css';
 import logo from '../Assets/logo.PNG';
+import { Link } from "react-router-dom";
 
 const Navbar = () =>{ 
     const [menu, setMenu] = useState("home");
@@ -14,7 +15,7 @@ const Navbar = () =>{
                 </div>
                 <ul className="nav-menu">
                     <li onClick={() => setMenu("home")}>
-                        Home {menu === "home" && <hr />}
+                        <Link style={{ textDecoration: 'none', color: 'white'}} to='/'>Home</Link> {menu === "home" && <hr />}
                     </li>
                     <li 
                         onMouseEnter={() => setDropdownVisible(true)}
@@ -39,8 +40,8 @@ const Navbar = () =>{
                                         <li><a href="#">Review writing service</a></li>
                                         <li><a href="#">Term paper writing service</a></li>
                                         <li><a href="#">Capstone writing service</a></li>
-                                        <li><a href="#">Personal statement writing service</a></li>
-                                        <li><a href="#">Annotated bibliography writing service</a></li>
+                                        <li><a href="#">Personal statement writing</a></li>
+                                        <li><a href="#">Annotated bibliography writing</a></li>
                                     </ul>
                                 </div>
                                 <div className="dropdown-column">
@@ -63,17 +64,17 @@ const Navbar = () =>{
                             </div>
                         )}
                     </li>
-                    <li onClick={() => setMenu("about")}>About Us {menu === "about" && <hr />}</li>
-                    <li onClick={() => setMenu("services")}>Our Services {menu === "services" && <hr />}</li>
-                    <li onClick={() => setMenu("working")}>How it Works {menu === "working" && <hr />}</li>
-                    <li onClick={() => setMenu("faq")}>FAQ {menu === "faq" && <hr />}</li>
-                    <li onClick={() => setMenu("plagiarism")}>Plagiarism Checker {menu === "plagiarism" && <hr />}</li>
+                    <li onClick={() => setMenu("about")}><Link style={{ textDecoration: 'none', color: 'white' }} to='/about'>About Us</Link> {menu === "about" && <hr />}</li>
+                    <li onClick={() => setMenu("services")}><Link style={{ textDecoration: 'none', color: 'white' }} to='/services'>Our Services</Link> {menu === "services" && <hr />}</li>
+                    <li onClick={() => setMenu("working")}><Link style={{ textDecoration: 'none', color: 'white' }} to='/working'>How it Works</Link> {menu === "working" && <hr />}</li>
+                    <li onClick={() => setMenu("faq")}><Link style={{ textDecoration: 'none', color: 'white' }} to='/faq'>FAQ</Link> {menu === "faq" && <hr />}</li>
+                    <li onClick={() => setMenu("plagiarism")}><Link style={{ textDecoration: 'none', color: 'white' }} to='/plagiarism'>Plagiarism Checker</Link> {menu === "plagiarism" && <hr />}</li>
                 </ul>
                 <div className="nav-login">
-                    <button>Login</button>
+                    <Link to='/login'><button>Login</button></Link>
                 </div>
                 <div className="new-order">
-                    <button>New Order</button>
+                       <Link to='/order'><button>New Order</button></Link>     
                 </div>
             </div>
         </div>
