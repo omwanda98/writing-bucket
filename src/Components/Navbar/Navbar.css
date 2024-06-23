@@ -194,4 +194,25 @@
         font-size: 24px;
         color: white;
     }
+
+    .dropdown-content {
+        position: relative; /* Change to relative for mobile */
+        width: 100%; /* Full width on mobile */
+        box-shadow: none; /* Remove box-shadow for mobile */
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .dropdown-column {
+        width: 100%; /* Full width for columns on mobile */
+        padding: 10px 16px;
+    }
+
+    .dropdown-column ul li {
+        margin: 5px 0;
+    }
+
+    .dropdown:hover .dropdown-content, .dropdown:focus .dropdown-content {
+        display: block; /* Show dropdown on hover and focus */
+    }
 }
