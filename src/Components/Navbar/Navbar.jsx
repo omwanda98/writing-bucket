@@ -8,7 +8,7 @@ const Navbar = () =>{
     const [dropdownVisible, setDropdownVisible] = useState(false);
 
     return (
-        <div className="navbar-container">
+        <div className="navbar-container">  
             <div className="navbar">
                 <div className="nav-logo">
                     <img src={logo} alt="logo" />
@@ -53,6 +53,7 @@ const Navbar = () =>{
                                         <li><a href="#">Accounting</a></li>
                                         <li><a href="#">Literature</a></li>
                                         <li><a href="#">Statistics</a></li>
+                                        <li><a href="#">Computing</a></li>
                                         <li><a href="#">Physics</a></li>
                                         <li><a href="#">Philosophy</a></li>
                                         <li><a href="#">Psychology</a></li>

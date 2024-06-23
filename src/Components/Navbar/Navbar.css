@@ -110,7 +110,7 @@
     background-color: #f9f9f9;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
-    z-index: 1;
+    z-index: 1000; /*to make sure it does not go under hero its z-index must be larger*/
     display: flex;
     gap: 20px;
     width: 600px;
