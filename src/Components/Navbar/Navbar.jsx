@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 const Navbar = () =>{ 
     const [menu, setMenu] = useState("home");
     const [dropdownVisible, setDropdownVisible] = useState(false);
+    const [menuVisible, setMenuVisible] = useState(false);
 
     return (
         <div className="navbar-container">  
@@ -13,7 +14,10 @@ const Navbar = () =>{
                 <div className="nav-logo">
                     <img src={logo} alt="logo" />
                 </div>
-                <ul className="nav-menu">
+                <div className="menu-icon" onClick={() => setMenuVisible(!menuVisible)}>
+                    &#9776;
+                </div>
+                <ul className={`nav-menu ${menuVisible ? 'show' : ''}`}>
                     <li onClick={() => setMenu("home")}>
                         <Link style={{ textDecoration: 'none', color: 'white'}} to='/'>Home</Link> {menu === "home" && <hr />}
                     </li>
@@ -53,7 +57,6 @@ const Navbar = () =>{
                                         <li><a href="#">Accounting</a></li>
                                         <li><a href="#">Literature</a></li>
                                         <li><a href="#">Statistics</a></li>
-                                        <li><a href="#">Computing</a></li>
                                         <li><a href="#">Physics</a></li>
                                         <li><a href="#">Philosophy</a></li>
                                         <li><a href="#">Psychology</a></li>

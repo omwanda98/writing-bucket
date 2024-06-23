@@ -151,3 +151,47 @@
 .dropdown-column ul li a:hover {
     text-decoration: underline;
 }
+
+/* Mobile view styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-logo img {
+        width: 150px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        display: none; /* Hide menu by default on mobile */
+        width: 100%;
+        gap: 20px;
+    }
+
+    .nav-menu.show {
+        display: flex; /* Show menu when toggled */
+    }
+
+    .nav-menu li {
+        width: 100%;
+    }
+
+    .nav-login, .new-order {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .new-order button {
+        width: 100%;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: white;
+    }
+}
