@@ -1,0 +1,97 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.service-steps, .service-benefits {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+    position: relative;
+}
+
+.step {
+    width: 20%;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.dot-line {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    width: 0;
+    height: 20px;
+    border-left: 2px dotted #007bff;
+}
+
+.step h2 {
+    font-size: 36px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.step h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.step p {
+    font-size: 16px;
+    color: #555;
+}
+
+.order-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+.benefit {
+    width: 30%;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.benefit h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.benefit p {
+    font-size: 16px;
+    color: #555;
+}
+
+.steps::before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 10%;
+    width: 80%;
+    height: 0;
+    border-top: 2px dotted #007bff;
+}
