@@ -16,6 +16,7 @@
     justify-content: center;
     gap: 20px;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .universities img {
@@ -26,6 +27,7 @@
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .expert-card {
@@ -36,6 +38,7 @@
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
+    margin: 10px;
 }
 
 .expert-img {
@@ -170,4 +173,48 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .universities {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experts-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .expert-card {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .calculator-row {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .description {
+        font-size: 14px;
+    }
+
+    .expert-info h2 {
+        font-size: 16px;
+    }
+
+    .expert-info p {
+        font-size: 12px;
+    }
+
+    .price-info .price {
+        font-size: 20px;
+    }
+
+    .place-order {
+        font-size: 14px;
+    }
 }
