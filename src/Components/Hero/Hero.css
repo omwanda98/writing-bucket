@@ -15,7 +15,8 @@
 
 .hero-content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Stack content vertically on small screens */
+    justify-content: center;
     align-items: center;
     width: 100%;
     max-width: 1200px; /* Max width to center content */
@@ -24,48 +25,49 @@
 }
 
 .hero-left, .hero-right {
-    flex: 1;
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    justify-content: center;
-    align-items: flex-start; /* Align elements to the left */
-    text-align: left;
+    width: 100%;
+    text-align: center;
     padding: 20px; /* Added padding */
 }
 
 .hero-left {
     color: white;
-    max-width: 50%;
+    max-width: 100%; /* Full width on small screens */
+    text-align: center;
 }
 
 .hero-left h1 {
-    font-size: 36px; /* Adjusted font size */
-    margin-bottom: 20px;
+    font-size: 28px; /* Adjusted font size for mobile */
+    margin-bottom: 15px;
 }
 
 .hero-left p {
-    font-size: 18px; /* Adjusted font size */
-    margin-bottom: 20px;
+    font-size: 16px; /* Adjusted font size for mobile */
+    margin-bottom: 15px;
 }
 
 .search-box {
     display: flex;
-    margin-bottom: 30px;
+    flex-direction: column; /* Stack elements vertically on small screens */
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .search-box input {
     padding: 10px;
-    font-size: 16px;
+    font-size: 14px; /* Adjusted font size for mobile */
     border: none;
-    border-radius: 5px 0 0 5px;
-    width: 300px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px; /* Max width for input */
+    margin-bottom: 10px;
 }
 
 .search-box button {
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 14px; /* Adjusted font size for mobile */
     border: none;
-    border-radius: 0 5px 5px 0;
+    border-radius: 5px;
     background-color: #007bff;
     color: white;
     cursor: pointer;
@@ -73,14 +75,16 @@
 
 .features {
     display: flex;
+    flex-wrap: wrap; /* Allow features to wrap on smaller screens */
+    justify-content: center; /* Center features on small screens */
     gap: 20px;
 }
 
 .feature {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
+    flex: 1 1 50%; /* Take half of the space on small screens, full width on larger screens */
+    max-width: 200px; /* Limit width for better spacing on small screens */
+    padding: 10px; /* Added padding */
 }
 
 .feature img {
@@ -90,7 +94,7 @@
 }
 
 .hero-right img {
-    width: 80%;
+    width: 100%;
     height: auto;
 }
 
@@ -100,4 +104,39 @@
     left: 0;
     width: 100%;
     height: auto;
+}
+
+@media (min-width: 768px) {
+    .hero-content {
+        flex-direction: row; /* Revert to horizontal layout on larger screens */
+        align-items: flex-start;
+    }
+
+    .hero-left, .hero-right {
+        width: 50%;
+        text-align: left;
+    }
+
+    .hero-left {
+        max-width: none;
+    }
+
+    .search-box {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .search-box input {
+        max-width: none;
+        margin-bottom: 0;
+    }
+
+    .features {
+        justify-content: space-between;
+    }
+
+    .feature {
+        flex: 1;
+        max-width: none;
+    }
 }
