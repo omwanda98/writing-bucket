@@ -106,6 +106,13 @@
     height: auto;
 }
 
+/* Add top padding to hero section to prevent overlap with navbar */
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 60px; /* Adjust this value based on the height of your navbar */
+    }
+}
+
 @media (min-width: 768px) {
     .hero-content {
         flex-direction: row; /* Revert to horizontal layout on larger screens */

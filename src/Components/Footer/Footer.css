@@ -7,7 +7,7 @@
 .footer-main {
     background-color: #206989;
     text-align: center;
-    padding: 40px 20px; /* Adjusted padding for more height */
+    padding: 40px 20px;
 }
 
 .footer-content {
@@ -27,23 +27,23 @@
     padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
-    margin-top: 20px; /* Adjusted margin for spacing */
+    margin-top: 20px;
     border-radius: 5px;
 }
 
 .footer-bottom {
     display: flex;
-    flex-wrap: wrap; /* Added for responsiveness */
-    justify-content: center; /* Center items on small screens */
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 20px 0;
 }
 
 .footer-section {
     flex: 1;
-    padding: 10px 20px; /* Adjusted padding for better spacing */
-    text-align: center; /* Center text on small screens */
-    max-width: 200px; /* Limit width of sections on small screens */
-    margin: 10px; /* Added margin for spacing between sections */
+    padding: 10px 20px;
+    text-align: center;
+    max-width: 200px;
+    margin: 10px;
 }
 
 .footer-section h3 {
@@ -62,7 +62,7 @@
 
 .footer-credits {
     display: flex;
-    flex-wrap: wrap; /* Added for responsiveness */
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 10px 20px;
     border-top: 1px solid #ffffff50;
@@ -71,7 +71,7 @@
 .footer-logo {
     display: flex;
     align-items: center;
-    margin-bottom: 10px; /* Added margin for spacing */
+    margin-bottom: 10px;
 }
 
 .footer-logo img {
@@ -82,4 +82,29 @@
 .payment-methods img {
     height: 30px;
     margin: 0 5px;
+}
+
+/* Mobile view styles */
+@media (max-width: 768px) {
+    .footer-bottom {
+        flex-direction: column; /* Stack footer sections vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .footer-section {
+        max-width: 100%; /* Full width for each section */
+        text-align: center; /* Center text alignment */
+    }
+
+    .footer-credits {
+        flex-direction: column; /* Stack footer credits vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .footer-logo,
+    .payment-methods {
+        width: 100%; /* Full width for logo and payment methods */
+        justify-content: center; /* Center align items */
+        text-align: center; /* Center text alignment */
+    }
 }
