@@ -1,6 +1,11 @@
 import React from "react";
 import './Footer.css';
 import logo from '../Assets/logo.PNG';
+import applepay from '../Assets/applepay.PNG'
+import paypal from '../Assets/paypal.PNG'
+import visa from '../Assets/visa.PNG'
+import mastercard from '../Assets/mastercard.PNG'
+import googlepay from '../Assets/googlepay.PNG'
 
 const Footer = () => {
     return (
@@ -45,11 +50,11 @@ const Footer = () => {
                     <p>© 2024 Writing Bucket All Rights Reserved</p>
                 </div>
                 <div className="payment-methods">
-                    <img src="/path-to-applepay.png" alt="Apple Pay" />
-                    <img src="/path-to-gpay.png" alt="Google Pay" />
-                    <img src="/path-to-visa.png" alt="Visa" />
-                    <img src="/path-to-mastercard.png" alt="MasterCard" />
-                    <img src="/path-to-paypal.png" alt="PayPal" />
+                    <img src={applepay} alt="Apple Pay" />
+                    <img src={googlepay} alt="Google Pay" />
+                    <img src={visa} alt="Visa" />
+                    <img src={mastercard} alt="MasterCard" />
+                    <img src={paypal} alt="PayPal" />
                 </div>
             </div>
         </footer>
