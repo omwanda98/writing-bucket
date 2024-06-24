@@ -9,6 +9,7 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Services from './Pages/Services';
 import Order from './Pages/Order';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path='/login' element={<LoginSignup/>}/>
             <Route path='/order' element={<Order/>}/>
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
   );
