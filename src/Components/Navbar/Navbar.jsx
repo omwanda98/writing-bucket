@@ -69,8 +69,8 @@ const Navbar = () =>{
                         )}
                     </li>
                     <li onClick={() => setMenu("about")}><Link style={{ textDecoration: 'none', color: 'white' }} to='/about'>About Us</Link> {menu === "about" && <hr />}</li>
-                    <li onClick={() => setMenu("services")}><Link style={{ textDecoration: 'none', color: 'white' }} to='/services'>Our Services</Link> {menu === "services" && <hr />}</li>
-                    <li onClick={() => setMenu("working")}><Link style={{ textDecoration: 'none', color: 'white' }} to='/working'>How it Works</Link> {menu === "working" && <hr />}</li>
+                    {/* <li onClick={() => setMenu("services")}><Link style={{ textDecoration: 'none', color: 'white' }} to='/services'>Our Services</Link> {menu === "services" && <hr />}</li> */}
+                    <li onClick={() => setMenu("howitworks")}><Link style={{ textDecoration: 'none', color: 'white' }} to='/howitworks'>How it Works</Link> {menu === "howitworks" && <hr />}</li>
                     <li onClick={() => setMenu("faq")}><Link style={{ textDecoration: 'none', color: 'white' }} to='/faq'>FAQ</Link> {menu === "faq" && <hr />}</li>
                     <li onClick={() => setMenu("plagiarism")}><Link style={{ textDecoration: 'none', color: 'white' }} to='/plagiarism'>Plagiarism Checker</Link> {menu === "plagiarism" && <hr />}</li>
                 </ul>
