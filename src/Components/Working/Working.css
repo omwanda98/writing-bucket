@@ -124,3 +124,16 @@
 .what-happens .step p {
     font-size: 1em;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .start-here .steps, .what-happens .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .start-here .step, .what-happens .step {
+        width: 90%;
+        margin: 10px 0;
+    }
+}
