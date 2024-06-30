@@ -73,13 +73,15 @@ const Navbar = () =>{
                     <li onClick={() => setMenu("howitworks")}><Link style={{ textDecoration: 'none', color: 'white' }} to='/howitworks'>How it Works</Link> {menu === "howitworks" && <hr />}</li>
                     <li onClick={() => setMenu("faq")}><Link style={{ textDecoration: 'none', color: 'white' }} to='/faq'>FAQ</Link> {menu === "faq" && <hr />}</li>
                     <li onClick={() => setMenu("plagiarism")}><Link style={{ textDecoration: 'none', color: 'white' }} to='/plagiarism'>Plagiarism Checker</Link> {menu === "plagiarism" && <hr />}</li>
+                    <div className="nav-login"><Link to='/login'><button>Login</button></Link></div>
+                    <div className="new-order"><Link to='/order'><button>New Order</button></Link></div>
                 </ul>
-                <div className="nav-login">
+                {/* <div className="nav-login">
                     <Link to='/login'><button>Login</button></Link>
-                </div>
-                <div className="new-order">
+                </div> */}
+                {/* <div className="new-order">
                        <Link to='/order'><button>New Order</button></Link>     
-                </div>
+                </div> */}
             </div>
         </div>
     );

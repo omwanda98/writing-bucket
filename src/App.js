@@ -8,6 +8,7 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Order from './Pages/Order';
 import Footer from './Components/Footer/Footer';
+import Login from './Pages/Login';
 import Howitworks from './Pages/Howitworks';
 
 function App() {
@@ -23,7 +24,8 @@ function App() {
             <Route path='/howitworks' element={<Howitworks/>}/>
             <Route path='/faq' element={<Faq/>}/>
             <Route path='/plagiarism' element={<PlagiarismChecker/>}/>
-            <Route path='/login' element={<LoginSignup/>}/>
+            <Route path='/login' element={<Login/>}/>
+            <Route path='/signup' element={<LoginSignup/>}/>
             <Route path='/order' element={<Order/>}/>
         </Routes>
         <Footer/>
