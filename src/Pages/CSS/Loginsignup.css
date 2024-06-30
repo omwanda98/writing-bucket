@@ -19,7 +19,7 @@
 }
 
 .signup-title {
-    color: blue;
+    color: #0a6d94;
     margin: 20px 0;
   
 }
@@ -45,7 +45,7 @@
     width: 100%;
     height: 45px;
     color: white;
-    background: blue;
+    background: #0a6d94;
     margin-top: 20px;
     border: none;
     border-radius: 4px;
@@ -61,7 +61,7 @@
 }
 
 .login-link {
-    color: blue;
+    color: #0a6d94;
     font-weight: 600; 
     cursor: pointer;
 }
