@@ -10,6 +10,7 @@ import Order from './Pages/Order';
 import Footer from './Components/Footer/Footer';
 import Login from './Pages/Login';
 import Howitworks from './Pages/Howitworks';
+import ForgotPassword from './Pages/ForgotPassword';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path='/plagiarism' element={<PlagiarismChecker/>}/>
             <Route path='/login' element={<Login/>}/>
             <Route path='/signup' element={<LoginSignup/>}/>
+            <Route path="/forgot-password" element={<ForgotPassword/>} />
             <Route path='/order' element={<Order/>}/>
         </Routes>
         <Footer/>
