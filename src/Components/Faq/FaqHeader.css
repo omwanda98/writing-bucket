@@ -1,0 +1,29 @@
+.faq-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+    height: 500px;
+}
+
+.faq-header-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.faq-header-text h1 {
+    font-size: 1.2rem;
+    color: #0056b3;
+}
+
+.faq-header-text h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+.faq-header-image img {
+    max-width: 100%;
+    height: auto;
+}

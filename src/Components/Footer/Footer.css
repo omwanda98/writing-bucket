@@ -79,9 +79,15 @@
     margin-right: 10px;
 }
 
+.payment-methods {
+    display: flex;
+    align-items: center;
+}
+
 .payment-methods img {
     height: 30px;
     margin: 0 5px;
+    border-radius: 18px;
 }
 
 /* Mobile view styles */
@@ -106,5 +112,6 @@
         width: 100%; /* Full width for logo and payment methods */
         justify-content: center; /* Center align items */
         text-align: center; /* Center text alignment */
+        
     }
 }

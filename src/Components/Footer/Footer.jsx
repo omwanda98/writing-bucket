@@ -1,11 +1,11 @@
 import React from "react";
 import './Footer.css';
 import logo from '../Assets/logo.PNG';
-import applepay from '../Assets/applepay.PNG'
-import paypal from '../Assets/paypal.PNG'
-import visa from '../Assets/visa.PNG'
-import mastercard from '../Assets/mastercard.PNG'
-import googlepay from '../Assets/googlepay.PNG'
+import applepay from '../Assets/applepay.PNG';
+import paypal from '../Assets/paypal.PNG';
+import visa from '../Assets/visa.PNG';
+import mastercard from '../Assets/mastercard.PNG';
+import googlepay from '../Assets/googlepay.PNG';
 
 const Footer = () => {
     return (

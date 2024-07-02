@@ -4,6 +4,8 @@ import hero from '../Assets/hero-image.png';
 import demand from '../Assets/demand.png'
 import time from '../Assets/time.png'
 import easy from '../Assets/easy.png'
+import { Link } from "react-router-dom";
+
 
 const Hero = () => {
     return (
@@ -14,7 +16,7 @@ const Hero = () => {
                     <p>From the beginning to end</p>
                     <div className="search-box">
                         <input type="text" placeholder="Tell us the topic you're stuck with" />
-                        <button>Get Started</button>
+                       <Link to='/login'><button>Get Started</button></Link> 
                     </div>
                     <div className="features">
                         <div className="feature">

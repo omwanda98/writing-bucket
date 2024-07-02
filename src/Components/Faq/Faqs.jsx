@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Faqs.css';
+import FaqHeader from './FaqHeader'; // Import the new component
 
 const faqData = [
     {
@@ -81,6 +82,7 @@ const Faqs = () => {
 
     return (
         <div className="faqs">
+            <FaqHeader /> {/* Include the new component */}
             <h1>Frequently Asked Questions</h1>
             <div className="faq-list">
                 {faqData.map((faq, index) => (
