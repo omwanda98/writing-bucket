@@ -11,8 +11,14 @@
     height: 100vh;
     overflow: hidden;
     padding: 0 20px; /* Horizontal padding to prevent overflow */
-}
-
+  }
+  
+  /* Mobile view styles */
+  @media (max-width: 768px) {
+    .hero {
+      margin-top: 150px; /* Increased margin-top for mobile devices */
+    }
+  }
 .hero-content {
     display: flex;
     flex-direction: column; /* Stack content vertically on small screens */
@@ -109,7 +115,7 @@
 /* Add top padding to hero section to prevent overlap with navbar */
 @media (max-width: 768px) {
     .hero {
-        padding-top: 60px; /* Adjust this value based on the height of your navbar */
+        padding-top: 80px; /* Adjust this value based on the height of your navbar */
     }
 }
 

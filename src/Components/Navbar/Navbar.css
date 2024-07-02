@@ -8,7 +8,7 @@
   padding: 16px;
   box-shadow: 0 1px 3px -2px black;
   background-color: #0a6d94;
-  position: fixed; /* Add this */
+  /* position: fixed; Add this */
   top: 0; /* Add this */
   left: 0; /* Add this */
   width: 100%; /* Add this */
