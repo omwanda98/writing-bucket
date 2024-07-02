@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './Footer.css';
 import logo from '../Assets/logo.PNG';
 import applepay from '../Assets/applepay.PNG';
@@ -13,7 +14,7 @@ const Footer = () => {
             <div className="footer-main">
                 <div className="footer-content">
                     <h2>Get professional help with your paper</h2>
-                    <button className="order-now">Order now →</button>
+                   <Link to='/login'><button className="order-now">Order now →</button></Link> 
                 </div>
             </div>
             <div className="footer-bottom">

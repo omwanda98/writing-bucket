@@ -362,6 +362,9 @@
   text-align: left;
   align-content: left;
 }
+.dropdown-content p {
+  margin: 3px 0; /* Adjust margin as needed */
+}
 
 .dropdown:hover .dropdown-content,
 .dropdown:focus .dropdown-content {

@@ -33,19 +33,19 @@ const Navbar = () =>{
                                 <div className="dropdown-column">
                                     <h3>Project Types</h3>
                                     <ul>
-                                        <li><a href="#">Essay writing service</a></li>
-                                        <li><a href="#">Dissertation writing service</a></li>
-                                        <li><a href="#">Custom writing service</a></li>
-                                        <li><a href="#">Speech writing service</a></li>
-                                        <li><a href="#">Assignment writing service</a></li>
-                                        <li><a href="#">Resume writing service</a></li>
-                                        <li><a href="#">Thesis writing service</a></li>
-                                        <li><a href="#">Lab report writing service</a></li>
-                                        <li><a href="#">Review writing service</a></li>
-                                        <li><a href="#">Term paper writing service</a></li>
-                                        <li><a href="#">Capstone writing service</a></li>
-                                        <li><a href="#">Personal statement writing</a></li>
-                                        <li><a href="#">Annotated bibliography writing</a></li>
+                                        <li><Link to='/book-review'><p>Review writing service</p></Link></li>
+                                        <li><Link to='/essay'><p>Essay writing service</p></Link></li>
+                                        <li><p>Dissertation writing service</p></li>
+                                        <li><p>Custom writing service</p></li>
+                                        <li><p>Speech writing service</p></li>
+                                        <li><p>Assignment writing service</p></li>
+                                        <li><p>Resume writing service</p></li>
+                                        <li><p>Thesis writing service</p></li>
+                                        <li><p>Lab report writing service</p></li>
+                                        <li><p>Term paper writing service</p></li>
+                                        <li><p>Capstone writing service</p></li>
+                                        <li><p>Personal statement writing</p></li>
+                                        <li><p>Annotated bibliography writing</p></li>
                                     </ul>
                                 </div>
                                 <div className="dropdown-column">

@@ -11,6 +11,8 @@ import Footer from './Components/Footer/Footer';
 import Login from './Pages/Login';
 import Howitworks from './Pages/Howitworks';
 import ForgotPassword from './Pages/ForgotPassword';
+import Book from './Pages/Book';
+import Essay from './Pages/Essay';
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
             <Route path='/signup' element={<LoginSignup/>}/>
             <Route path="/forgot-password" element={<ForgotPassword/>} />
             <Route path='/order' element={<Order/>}/>
+            <Route path='/book-review' element={<Book/>}/>
+            <Route path='/essay' element={<Essay/>}/>
         </Routes>
         <Footer/>
       </BrowserRouter>
