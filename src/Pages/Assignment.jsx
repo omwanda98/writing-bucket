@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './CSS/Asssignment.css';
+import './CSS/Assignment.css';
 import programme from '../Components/Assets/Rectangle 70.jpg';
 
 const Asssignment = () => {
