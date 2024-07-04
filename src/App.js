@@ -15,6 +15,8 @@ import Book from './Pages/Book';
 import Essay from './Pages/Essay';
 import Dissertation from './Components/Dissertation/Dissertation';
 import CustomReviews from './Pages/CustomReviews';
+import Programming from './Pages/Programming';
+import Asssignment from './Pages/Assignment';
 
 
 function App() {
@@ -38,6 +40,8 @@ function App() {
             <Route path='/essay' element={<Essay/>}/>
             <Route path='/dissertation' element={<Dissertation/>}/>
             <Route path='/custom-review' element={<CustomReviews/>}/>
+            <Route path='/programming' element={<Programming/>}/>
+            <Route path='/assignment' element={<Asssignment/>}/>
         </Routes>
         <Footer/>
       </BrowserRouter>
