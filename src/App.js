@@ -13,6 +13,9 @@ import Howitworks from './Pages/Howitworks';
 import ForgotPassword from './Pages/ForgotPassword';
 import Book from './Pages/Book';
 import Essay from './Pages/Essay';
+import Dissertation from './Components/Dissertation/Dissertation';
+import CustomReviews from './Pages/CustomReviews';
+
 
 function App() {
   return (
@@ -33,6 +36,8 @@ function App() {
             <Route path='/order' element={<Order/>}/>
             <Route path='/book-review' element={<Book/>}/>
             <Route path='/essay' element={<Essay/>}/>
+            <Route path='/dissertation' element={<Dissertation/>}/>
+            <Route path='/custom-review' element={<CustomReviews/>}/>
         </Routes>
         <Footer/>
       </BrowserRouter>

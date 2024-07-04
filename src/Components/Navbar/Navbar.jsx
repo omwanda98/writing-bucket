@@ -35,8 +35,8 @@ const Navbar = () =>{
                                     <ul>
                                         <li><Link to='/book-review'><p>Review writing service</p></Link></li>
                                         <li><Link to='/essay'><p>Essay writing service</p></Link></li>
-                                        <li><p>Dissertation writing service</p></li>
-                                        <li><p>Custom writing service</p></li>
+                                        <li><Link to='/dissertation'><p>Dissertation writing service</p></Link></li>
+                                        <li><Link to='/custom-review'><p>Custom writing service</p></Link></li>
                                         <li><p>Speech writing service</p></li>
                                         <li><p>Assignment writing service</p></li>
                                         <li><p>Resume writing service</p></li>
